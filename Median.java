@@ -1,12 +1,10 @@
-import java.util.Arrays;
+
 
 //Find out the median of two sorted array
 public class Median {
     public static void main(String args[]){
-        /*int arr1[]={1,2,6};
-        int arr2[]={3,5,7};*/
-        int arr1[]={1,3};
-        int arr2[]={2};
+        int arr1[]={1,2,6};
+        int arr2[]={3,5,7};
         int temp[]=new int[(arr1.length)+(arr2.length)];
         int k=0,i=0,j=0,mid=0,k2=0;
 
