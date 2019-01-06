@@ -16,14 +16,13 @@ Example 2:
 Input: [4,5,6,7,0,1,2]
 Output: 0
  */
-package Leetcode;
+
 
 import java.util.Arrays;
 
 public class Q153 {
     public static void main(String args[]){
         int[]arr={3,4,5,1,2};
-        //int[]arr={1,3,5};
         Solution153 obj153=new Solution153();
         System.out.println(obj153.findMin(arr));
 
@@ -32,12 +31,6 @@ public class Q153 {
 class Solution153{
     public int findMin(int[] nums) {
         int min=nums[0];
-       /* Arrays.sort(nums);
-        for(int i=0;i<nums.length;i++){
-            if(nums[i]<=min){
-                min=nums[i];
-            }
-        }*/
        for(int i=0;i<nums.length-1;i++){
            if(nums[i+1]<nums[i]){
                min=nums[i+1];
