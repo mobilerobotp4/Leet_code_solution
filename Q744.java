@@ -1,4 +1,4 @@
-/*
+/* Problem Name: Find Smallest Letter Greater Than Target
 Given a list of sorted characters letters containing only lowercase letters, and given a target letter target,
 find the smallest element in the list that is larger than the given target.
 
@@ -35,21 +35,14 @@ letters = ["c", "f", "j"]
 target = "k"
 Output: "c"
  */
-package Leetcode;
+
 
 public class Q744 {
     public static void main(String args[]){
-        //Test case 1:
-        /*char[]letters={'c', 'f', 'j'};
-        char target= 'a';*/
-        //Test case 2:
+       
         char[]letters={'c', 'f', 'j'};
         char target= 'g';
-        /*Test case 3:
-        char[]letters={'c', 'f', 'j'};
-        char target= 'j';*/
-        /*char[]letters={'c', 'f', 'j'};
-        char target= 'k';*/
+       
         Solution744 obj744=new Solution744();
         System.out.println(obj744.nextGreatestLetter(letters,target));
 
@@ -57,7 +50,7 @@ public class Q744 {
 }
 class Solution744{
     public char nextGreatestLetter(char[] letters, char target) {
-       // char a=' ';
+       
         for(int i=0;i<=letters.length-1;i++) {
 
             if (letters[i] > target) {
@@ -67,13 +60,7 @@ class Solution744{
             }
         }
             return letters[0];
-      /*  for (char c: letters){
-            System.out.println(c);
-            if (c > target) return c;
-
-        }
-
-        return letters[0];*/
+     
     }
 
 }
