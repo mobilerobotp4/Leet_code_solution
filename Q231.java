@@ -1,4 +1,6 @@
 /*
+Problem Name: Power of two
+
 Given an integer, write a function to determine if it is a power of two.
 
 Example 1:
@@ -16,7 +18,7 @@ Example 3:
 Input: 218
 Output: false
  */
-package Leetcode;
+
 
 public class Q231 {
     public static void main(String args[]){
