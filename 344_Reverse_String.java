@@ -32,3 +32,12 @@ class Solution {
 }
 
 //Runtime: 1 ms , Memory Usage: 45.6 MB
+
+/*
+Alternative for "foor loop"
+int j = s.length - 1;
+for (int i = 0; i < j; i++) {
+    // inside logic
+    j--;
+}
+*/
